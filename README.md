@@ -207,7 +207,7 @@ I'm **[Anish Prashun](https://github.com/anishpras)**. I offer application revie
 
 A scoped review can cover shipped artifacts, build settings, public maps/symbols, sensitive API workflows and a prioritized remediation plan with validation. No promise that a public product can become impossible to copy.
 
-For a review, use the contact links on [my GitHub profile](https://github.com/anishpras). **Please don't upload private application code or keys to public issues.** A dedicated site with direct email and call booking will be linked when those channels are configured.
+For a scoped review, [book a call with me](https://cal.com/anishpras/clone-guard). You can also find current work and contact links on [my GitHub profile](https://github.com/anishpras). **Please don't upload private application code or keys to public issues.**
 
 ## Roadmap
 

@@ -10,4 +10,4 @@ No “unclonable” promises. Reproducible evidence and explicit limits.
 
 https://github.com/anishpras/cloneguard
 
-If you'd like me to review your app's release exposure and client/server boundaries, get in touch through my profile.
+If you'd like me to review your app's release exposure and client/server boundaries, book a call: https://cal.com/anishpras/clone-guard
