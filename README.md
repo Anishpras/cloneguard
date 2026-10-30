@@ -19,6 +19,13 @@ AI agents can inspect a product's frontend, binaries and API traffic, then help 
 
 It combines an agent skill, a dependency-free local CLI, and a read-only MCP server. **v0.1 is a release-exposure and hardening workflow, not a universal anti-cloning compiler.** Public behavior remains observable. Code that runs on a customer's device remains inspectable.
 
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/cloneguard-rea-mobile.svg">
+  <img alt="Animated CloneGuard and REA release-exposure walkthrough" src="docs/assets/cloneguard-rea.svg">
+</picture>
+
+*Illustrative workflow: keep private files out of the public release, let agents inspect the files that remain, and verify release receipts. This is not a measured REA reconstruction test. The animation plays once and respects reduced-motion preferences.*
+
 ```text
 $ ./cloneguard audit ./dist
   JSON findings, screened files, platform hints and explicit coverage gaps
