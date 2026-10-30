@@ -1,6 +1,6 @@
 <div align="center">
 
-# CloneGuard by Anish
+# CloneGuard
 
 ### Your app ships. Your implementation doesn't have to.
 
