@@ -1,0 +1,2 @@
+Launching CloneGuard: an open-source skill + CLI for release exposure, native hardening workflows and verifiable artifacts. Swift, web, Android and desktop. Local-first, MIT, no runtime dependencies. Benchmarks + BLA/REA review included.
+https://github.com/anishpras/cloneguard
