@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "binary_plist_trailer_rejected": true,
+    "complete_after": true,
+    "complete_before": true,
+    "high_findings_removed": true,
+    "manifest_intact_passes": true,
+    "original_map_retained_privately": true,
+    "retained_bytes_identical": true,
+    "tamper_detected": true
+  },
+  "environment": {
+    "machine": "arm64",
+    "python": "3.13.7",
+    "system": "Darwin"
+  },
+  "fixture": "synthetic loose web release; 4 files; no customer code",
+  "generated_utc": "2026-10-30T15:19:35.408519+00:00",
+  "measured": {
+    "after_bytes": 83,
+    "after_high_or_critical": 0,
+    "audit_median_ms": 0.24,
+    "audit_runs": 7,
+    "before_bytes": 167,
+    "before_high_or_critical": 3,
+    "omitted_files": 2,
+    "stage_ms": 1.367
+  },
+  "passed": true,
+  "schema": "cloneguard.benchmark.v1",
+  "unmeasured": [
+    "LLM reconstruction success",
+    "attacker token/cost multiplier",
+    "signed mobile app compatibility",
+    "production throughput"
+  ],
+  "version": "0.1.0"
+}

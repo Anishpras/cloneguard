@@ -1,0 +1,13 @@
+Launching CloneGuard by Anish: an open-source skill + local CLI for reducing release exposure and AI-assisted cloning risk.
+
+Audit shipped artifacts, keep source maps and debug data private, follow native hardening workflows for Swift/web/Android/desktop, and verify release receipts.
+
+Local-first. MIT. No runtime dependencies.
+
+I also tested BLA against real REA modules and documented what worked, what was projected, and two Apple fixture compatibility issues.
+
+No “unclonable” promises. Reproducible evidence and explicit limits.
+
+https://github.com/anishpras/cloneguard
+
+If you'd like me to review your app's release exposure and client/server boundaries, get in touch through my profile.

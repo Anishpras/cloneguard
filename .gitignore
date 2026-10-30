@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.cloneguard-private/
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+dist/
+build/
+node_modules/
+private-site/
+*.zip

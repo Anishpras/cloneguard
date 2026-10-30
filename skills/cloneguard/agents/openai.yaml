@@ -1,0 +1,4 @@
+interface:
+  display_name: "CloneGuard"
+  short_description: "Reduce cloning exposure across app platforms"
+  default_prompt: "Use $cloneguard to audit this project, harden its release, and verify what changed."

@@ -1,0 +1,220 @@
+{
+  "schema": "cloneguard.bla-comparison.v1",
+  "generated_utc": "2026-10-30T15:26:20.220Z",
+  "node": "v24.22.1",
+  "bla_version": "1.5.1",
+  "swift": {
+    "original_sha256": "a521f440c9c3c275451ea005f96c1bc597f36813697cca3efbd1009710d81a2b",
+    "original_bytes": 53840,
+    "transformed_bytes": 1220127,
+    "original_signature": 0,
+    "transformed_signature": 1,
+    "original_behavior": "8500",
+    "transformed_behavior": "8500"
+  },
+  "plist": {
+    "original_bytes": 96,
+    "transformed_bytes": 8134,
+    "original_apple_parser_exit": 0,
+    "transformed_apple_parser_exit": 1
+  },
+  "rea": {
+    "status": "completed",
+    "exit": 0,
+    "stderr": "",
+    "pairs": [
+      {
+        "format": "go_buildinfo",
+        "before": {
+          "status": "ok",
+          "bytes": 51339
+        },
+        "after": {
+          "status": "error",
+          "bytes": 1217275,
+          "budgetHit": true,
+          "budgetName": "MAX_BUILD_INFO_BYTES"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "flutter_pool",
+        "before": {
+          "status": "ok",
+          "bytes": 51339
+        },
+        "after": {
+          "status": "ok",
+          "bytes": 1217275,
+          "budgetHit": true,
+          "budgetName": "MAX_POOL_URIS|MAX_POOL_TOKENS"
+        },
+        "evidence_type": "reimplemented-projection"
+      },
+      {
+        "format": "erlang_beam",
+        "before": {
+          "status": "ok",
+          "bytes": 84
+        },
+        "after": {
+          "status": "error",
+          "bytes": 267876,
+          "budgetHit": true,
+          "budgetName": "max_chunks"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "evm_bytecode",
+        "before": {
+          "status": "ok",
+          "bytes": 16
+        },
+        "after": {
+          "status": "ok",
+          "bytes": 4190208,
+          "budgetHit": true,
+          "budgetName": "EVM_INTERFACE_LIMITS.inputBytes (approach)"
+        },
+        "evidence_type": "input-cap-approach"
+      },
+      {
+        "format": "pcap_capture",
+        "before": {
+          "status": "skipped",
+          "bytes": 24
+        },
+        "after": {
+          "status": "skipped",
+          "bytes": 1347474,
+          "budgetHit": false,
+          "budgetName": null
+        },
+        "evidence_type": "skipped"
+      },
+      {
+        "format": "safetensors",
+        "before": {
+          "status": "ok",
+          "bytes": 128
+        },
+        "after": {
+          "status": "error",
+          "bytes": 10200,
+          "budgetHit": true,
+          "budgetName": "MODEL_JSON_NESTING"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "gguf",
+        "before": {
+          "status": "ok",
+          "bytes": 24
+        },
+        "after": {
+          "status": "error",
+          "bytes": 7712,
+          "budgetHit": true,
+          "budgetName": "MODEL_METADATA_NESTING"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "gpu_ptx",
+        "before": {
+          "status": "ok",
+          "bytes": 91
+        },
+        "after": {
+          "status": "ok",
+          "bytes": 26424,
+          "budgetHit": false,
+          "budgetName": null
+        },
+        "evidence_type": "inspection-only"
+      },
+      {
+        "format": "electron_asar",
+        "before": {
+          "status": "ok",
+          "bytes": 607
+        },
+        "after": {
+          "status": "error",
+          "bytes": 17752989,
+          "budgetHit": true,
+          "budgetName": "DEFAULT_ASAR_MAX_HEADER_BYTES"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "wasm_module",
+        "before": {
+          "status": "ok",
+          "bytes": 54
+        },
+        "after": {
+          "status": "budget_rejected",
+          "bytes": 6881265,
+          "budgetHit": true,
+          "budgetName": "WASM_INTERFACE_REPRESENTATION_BYTES"
+        },
+        "evidence_type": "projected-REA-budget-without-Wabt"
+      },
+      {
+        "format": "sqlite_db",
+        "before": {
+          "status": "ok",
+          "bytes": 12288
+        },
+        "after": {
+          "status": "budget_rejected",
+          "bytes": 57344,
+          "budgetHit": true,
+          "budgetName": "SqliteColumnEvaluationFailure"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "electron_fuses",
+        "before": {
+          "status": "ok",
+          "bytes": 51339
+        },
+        "after": {
+          "status": "budget_rejected",
+          "bytes": 1217275,
+          "budgetHit": true,
+          "budgetName": "ELECTRON_FUSE_LIMITS.maximumSentinelsPerSlice"
+        },
+        "evidence_type": "REA-module-probe"
+      },
+      {
+        "format": "javascript",
+        "before": {
+          "status": "ok",
+          "bytes": 761
+        },
+        "after": {
+          "status": "budget_rejected",
+          "bytes": 124048,
+          "budgetHit": true,
+          "budgetName": "alias-selections+getter-expansion+primitive-bytes+primitive-candidates"
+        },
+        "evidence_type": "REA-module-probe"
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic fixtures only",
+    "No model reconstruction trial",
+    "No actual App Store signing or device validation",
+    "Native transform applied after local toolchain signing; re-signing before distribution is a separate workflow"
+  ],
+  "pinned_revisions": {
+    "bla": "b2d643600774d62e562081129e55b13b0d9e8a80",
+    "rea": "250dc81cd6b887f41a4078b65ca7a78628d1c541"
+  }
+}

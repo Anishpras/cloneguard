@@ -1,0 +1,87 @@
+{
+  "behavior_vectors": [
+    {
+      "cents": 0,
+      "debug": "0",
+      "expected": "0",
+      "matches": true,
+      "release": "0",
+      "tier": 1
+    },
+    {
+      "cents": 1,
+      "debug": "0",
+      "expected": "0",
+      "matches": true,
+      "release": "0",
+      "tier": 2
+    },
+    {
+      "cents": 99,
+      "debug": "94",
+      "expected": "94",
+      "matches": true,
+      "release": "94",
+      "tier": 1
+    },
+    {
+      "cents": 10000,
+      "debug": "8500",
+      "expected": "8500",
+      "matches": true,
+      "release": "8500",
+      "tier": 2
+    },
+    {
+      "cents": 10000,
+      "debug": "9500",
+      "expected": "9500",
+      "matches": true,
+      "release": "9500",
+      "tier": 1
+    },
+    {
+      "cents": 12345,
+      "debug": "10493",
+      "expected": "10493",
+      "matches": true,
+      "release": "10493",
+      "tier": 2
+    }
+  ],
+  "debug_bytes": 54352,
+  "environment": {
+    "compiler": "Apple Swift version 6.2 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)\nTarget: arm64-apple-macosx26.0",
+    "machine": "arm64",
+    "system": "Darwin"
+  },
+  "flags": {
+    "debug": [
+      "-Onone",
+      "-g"
+    ],
+    "release": [
+      "-O"
+    ]
+  },
+  "generated_utc": "2026-10-30T15:23:01.494688+00:00",
+  "manifest_matches": true,
+  "passed": true,
+  "release_bytes": 53840,
+  "schema": "cloneguard.swift-benchmark.v1",
+  "signature": {
+    "meaning": "Local toolchain fixture signature only; no notarization, device or App Store assertion.",
+    "returncode": 0,
+    "status": "passed"
+  },
+  "source_sha256": "218e75bc73cbec9d85d1c659576b8f33a39b7a679202d431914fa4ba1efd93d7",
+  "status": "completed",
+  "tamper_detected": true,
+  "unmeasured": [
+    "clone resistance",
+    "Swift symbol obfuscation",
+    "real application/device compatibility",
+    "notarization",
+    "attestation"
+  ]
+}
