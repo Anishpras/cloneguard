@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" class="cg-demo" style="--cg-publish:104px, 0px;--cg-probe:-62px, 0px;--cg-public:82px, 0px" role="img" aria-labelledby="cg-desktop-title" aria-describedby="cg-desktop-desc">
+  <title id="cg-desktop-title">CloneGuard and REA: reducing release exposure</title>
+  <desc id="cg-desktop-desc">Illustrative workflow. CloneGuard finds a source map and environment file, keeps them in private storage, and stages JavaScript and HTML publicly. REA can read the public files but the removed source map is not shipped. A release receipt detects a later file modification. This does not demonstrate prevention of cloning.</desc>
+  <style>
+    .cg-bg{fill:#f8f9f6}.cg-panel{fill:#f8f9f6;stroke:#cdd6c7;stroke-width:1.4}.cg-owner{fill:#e5ecdf;stroke:#b6c7af;stroke-width:1.4}.cg-release{fill:#fff;stroke:#315b3c;stroke-width:1.8}.cg-chip{fill:#eff2ec;stroke:#d4ddcd}.cg-title,.cg-body,.cg-small,.cg-label{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;fill:#20251f}.cg-title{font-size:26px;font-weight:600;letter-spacing:-.6px}.cg-body{font-size:19px}.cg-small{font-size:16px;fill:#62695f}.cg-label{font-size:17px;fill:#315b3c;font-weight:600}.cg-code{font:16px 'SFMono-Regular',Consolas,monospace;fill:#315b3c}.cg-divider,.cg-wire{fill:none;stroke:#c3cdbd;stroke-width:1.5}.cg-wire{stroke-dasharray:5 6}.cg-packet rect{fill:#315b3c;stroke:#315b3c}.cg-packet text{fill:#fff;font:15px 'SFMono-Regular',Consolas,monospace}.cg-probe rect{fill:#62695f;stroke:#62695f}.cg-phase{opacity:0}.cg-phase-3{opacity:1}.cg-source-private{opacity:0}.cg-private-files{opacity:1}.cg-packet{opacity:0}.cg-phase-0{animation:cg-audit 16s step-end 1 both}.cg-phase-1{animation:cg-stage 16s step-end 1 both}.cg-phase-2{animation:cg-inspect 16s step-end 1 both}.cg-phase-3{animation:cg-verify 16s step-end 1 both}.cg-source-private{animation:cg-remove 16s ease-in-out 1 both}.cg-private-files{animation:cg-store 16s ease-in-out 1 both}.cg-publish{animation:cg-publish 16s ease-in-out 1 both}.cg-probe{animation:cg-probe 16s ease-in-out 1 both}.cg-public-code{animation:cg-public-code 16s ease-in-out 1 both}
+    @keyframes cg-audit{0%,24.99%{opacity:1}25%,100%{opacity:0}}@keyframes cg-stage{0%,24.99%{opacity:0}25%,49.99%{opacity:1}50%,100%{opacity:0}}@keyframes cg-inspect{0%,49.99%{opacity:0}50%,74.99%{opacity:1}75%,100%{opacity:0}}@keyframes cg-verify{0%,74.99%{opacity:0}75%,100%{opacity:1}}
+    @keyframes cg-remove{0%,25%{opacity:1;transform:translateY(0)}34%,100%{opacity:0;transform:translateY(35px)}}@keyframes cg-store{0%,26%{opacity:0;transform:translateY(-20px)}35%,100%{opacity:1;transform:translateY(0)}}
+    @keyframes cg-publish{0%,34%{opacity:0;transform:translate(0,0)}37%{opacity:1;transform:translate(0,0)}46%{opacity:1;transform:translate(var(--cg-publish))}49%,100%{opacity:0;transform:translate(var(--cg-publish))}}
+    @keyframes cg-probe{0%,50%{opacity:0;transform:translate(0,0)}53%{opacity:1;transform:translate(0,0)}60%,64%{opacity:1;transform:translate(var(--cg-probe))}71%{opacity:1;transform:translate(0,0)}74%,100%{opacity:0;transform:translate(0,0)}}
+    @keyframes cg-public-code{0%,62%{opacity:0;transform:translate(0,0)}65%{opacity:1;transform:translate(0,0)}73%{opacity:1;transform:translate(var(--cg-public))}76%,100%{opacity:0;transform:translate(var(--cg-public))}}
+    .cg-demo[data-paused='true'] *{animation-play-state:paused!important}.cg-demo[data-static-stage] *{animation:none!important}.cg-demo[data-static-stage] .cg-phase{opacity:0}.cg-demo[data-static-stage='0'] .cg-phase-0,.cg-demo[data-static-stage='1'] .cg-phase-1,.cg-demo[data-static-stage='2'] .cg-phase-2,.cg-demo[data-static-stage='3'] .cg-phase-3{opacity:1}.cg-demo[data-static-stage='0'] .cg-source-private{opacity:1}.cg-demo[data-static-stage='0'] .cg-private-files{opacity:0}
+    @media(prefers-reduced-motion:reduce){.cg-demo *{animation:none!important}.cg-phase{opacity:0}.cg-phase-3{opacity:1}}
+  </style>
+  <rect x="0" y="0" width="1120" height="520" rx="6" class="cg-bg"/>
+  <path class="cg-wire" d="M308 194 H422 M698 194 H812 M698 251 H812 M168 316 V375 M560 315 V375"/>
+  <rect x="28" y="28" width="280" height="288" rx="6" class="cg-owner"/>
+  <text x="46" y="68" class="cg-title" text-anchor="start">CloneGuard</text>
+  <text x="46" y="95" class="cg-small" text-anchor="start">Release workflow</text>
+  <path d="M46 114 H290" class="cg-divider"/>
+  <text x="46" y="147" class="cg-label" text-anchor="start">Audit, stage, verify</text>
+  <g class=""><rect x="46" y="171" width="244" height="34" rx="6" class="cg-chip"/><text x="58" y="194" class="cg-code" text-anchor="start">app.js + index.html</text></g>
+  <g class="cg-source-private"><rect x="46" y="217" width="244" height="34" rx="6" class="cg-chip"/><text x="58" y="240" class="cg-code" text-anchor="start">.map + .env</text></g>
+  <text x="46" y="291" class="cg-small" text-anchor="start">Keep the original build.</text>
+  <rect x="812" y="28" width="280" height="288" rx="6" class="cg-panel"/>
+  <text x="830" y="68" class="cg-title" text-anchor="start">REA</text>
+  <text x="830" y="95" class="cg-small" text-anchor="start">Analysis agent</text>
+  <path d="M830 114 H1074" class="cg-divider"/>
+  <text x="830" y="147" class="cg-label" text-anchor="start">Inspect public files</text>
+  <text x="830" y="185" class="cg-body" text-anchor="start">Read the bundle</text>
+  <text x="830" y="217" class="cg-body" text-anchor="start">Observe the UI</text>
+  <text x="830" y="291" class="cg-small" text-anchor="start">Public behavior stays visible.</text>
+  <rect x="422" y="85" width="276" height="230" rx="6" class="cg-release"/>
+  <text x="560" y="123" class="cg-title" text-anchor="middle">Public release</text>
+  <g class=""><rect x="440" y="146" width="240" height="34" rx="6" class="cg-chip"/><text x="452" y="169" class="cg-code" text-anchor="start">app.js</text></g>
+  <g class=""><rect x="440" y="190" width="240" height="34" rx="6" class="cg-chip"/><text x="452" y="213" class="cg-code" text-anchor="start">index.html</text></g>
+  <g class="cg-phase cg-phase-0"><text x="560" y="265" class="cg-label" text-anchor="middle">Private files found</text><text x="560" y="293" class="cg-small" text-anchor="middle">Original bytes retained.</text></g><g class="cg-phase cg-phase-1"><text x="560" y="265" class="cg-label" text-anchor="middle">Keep private files out</text><text x="560" y="293" class="cg-small" text-anchor="middle">Original bytes retained.</text></g><g class="cg-phase cg-phase-2"><text x="560" y="265" class="cg-label" text-anchor="middle">Source map not shipped</text><text x="560" y="293" class="cg-small" text-anchor="middle">Public code is readable.</text></g><g class="cg-phase cg-phase-3"><text x="560" y="265" class="cg-label" text-anchor="middle">Modification detected</text><text x="560" y="293" class="cg-small" text-anchor="middle">Receipt comparison.</text></g>
+  <rect x="28" y="375" width="280" height="96" rx="6" class="cg-owner"/>
+  <text x="46" y="404" class="cg-label" text-anchor="start">Private storage</text>
+  <g class="cg-private-files"><rect x="46" y="418" width="244" height="34" rx="6" class="cg-chip"/><text x="58" y="441" class="cg-code" text-anchor="start">.map + .env</text></g>
+  <rect x="422" y="375" width="670" height="96" rx="6" class="cg-panel"/>
+  <text x="440" y="404" class="cg-label" text-anchor="start">Release receipt</text>
+  <g class="cg-phase cg-phase-0"><text x="440" y="434" class="cg-small" text-anchor="start">Record what will be shipped.</text></g>
+  <g class="cg-phase cg-phase-1"><text x="440" y="434" class="cg-small" text-anchor="start">Record hashes of the staged files.</text></g>
+  <g class="cg-phase cg-phase-2"><text x="440" y="434" class="cg-small" text-anchor="start">Retain the receipt outside the public release.</text></g>
+  <g class="cg-phase cg-phase-3"><text x="440" y="434" class="cg-body" text-anchor="start">Modified asset → receipt mismatch</text></g>
+  <g class="cg-packet cg-publish"><rect x="272" y="179" width="82" height="30" rx="6" class="cg-panel"/><text x="313" y="200" class="" text-anchor="middle">app.js</text></g>
+  <g class="cg-packet cg-probe"><rect x="684" y="179" width="76" height="30" rx="6" class="cg-panel"/><text x="722" y="200" class="" text-anchor="middle">.map?</text></g>
+  <g class="cg-packet cg-public-code"><rect x="684" y="236" width="82" height="30" rx="6" class="cg-panel"/><text x="725" y="257" class="" text-anchor="middle">app.js</text></g>
+  <g class="cg-phase cg-phase-0"><text x="560" y="505" class="cg-label" text-anchor="middle">Audit release inputs</text></g><g class="cg-phase cg-phase-1"><text x="560" y="505" class="cg-label" text-anchor="middle">Stage the public release</text></g><g class="cg-phase cg-phase-2"><text x="560" y="505" class="cg-label" text-anchor="middle">REA inspects public files</text></g><g class="cg-phase cg-phase-3"><text x="560" y="505" class="cg-label" text-anchor="middle">Verify the release receipt</text></g>
+</svg>
